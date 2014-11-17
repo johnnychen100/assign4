@@ -121,11 +121,11 @@ void keyPressed() {
 void alienMaker(float ox, float oy, float colSpacing, float rowSpacing, float num, float numInRow) {
   
   for(int i=0; i<num; i++) {
-    float row = i / numInRow;
-    float col = i % numInRow;
+    float row = float( i / numInRow);
+    float col = float(i % numInRow);
  
-    float x = ox + (colSpacing*col);
-    float y = oy + (rowSpacing*row);
+    float x = float(ox + (colSpacing*col));
+    float y = float(oy + (rowSpacing*row));
     aList[i]= new Alien(x, y);
   }
 }
