@@ -118,14 +118,14 @@ void keyPressed() {
 }
 
 /*---------Make Alien Function-------------*/
-void alienMaker(int ox, int oy, int colSpacing, int rowSpacing, int num, int numInRow) {
+void alienMaker(float ox, float oy, float colSpacing, float rowSpacing, int num, int numInRow) {
   
   for(int i=0; i<num; i++) {
     int row = i / numInRow;
     int col = i % numInRow;
  
-    int x = ox + (colSpacing*col);
-    int y = oy + (rowSpacing*row);
+    float x = ox + (colSpacing*col);
+    float y = oy + (rowSpacing*row);
     aList[i]= new Alien(x, y);
   }
 }
