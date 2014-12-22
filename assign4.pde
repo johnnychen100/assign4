@@ -424,11 +424,11 @@ void statusCtrl() {
       break;
       
     case GAME_WIN:
-      status = GAME_START;
+      status = GAME_PLAYING;
       break;
     
     case GAME_LOSE:
-      status = GAME_START;
+      status = GAME_PLAYING;
       break;
     
     }
